@@ -1,0 +1,14 @@
+[package]
+name = "personnel"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+actix-web = "4.0"
+mongodb = "2.0"  # No need for the `bson` feature
+bson = "2.0"     # Include the separate bson crate
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1.0", features = ["full"] }
+futures-util = "0.3"
+futures = "0.3"
